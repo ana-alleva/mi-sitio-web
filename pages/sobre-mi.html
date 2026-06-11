@@ -14,42 +14,71 @@
   </head>
   <body>
     <header>
-      <div class="text-container">
-        <h1>Sobre mi</h1>
-        <p>Este es mi primer sitio web profesional.</p>
-      </div>
       <nav>
         <ul>
           <li>
             <a href="../index.html">Inicio</a>
           </li>
           <li>
-            <a href="./sobre-mi.html">Sobre mí</a>
+            <a class="active" href="sobre-mi.html">Sobre mí</a>
           </li>
           <li>
-            <a href="./proyectos.html">Proyectos</a>
+            <a href="proyectos.html">Proyectos</a>
           </li>
           <li>
-            <a href="./demo.html">Demo</a>
+            <a href="demo">Demo</a>
           </li>
           <li>
-            <a href="./contacto.html">Contacto</a>
+            <a href="contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="sobre-mi"></section>
+      <section id="hero-sobre-mi">
+        <div class="hero-text">
+          <h1>Un poco sobre mi</h1>
+          <p>
+            Soy UX Researcher y Product Designer. Me apasiona entender cómo las
+            personas piensan, toman decisiones e interactúan con la tecnología
+            para transformar esos aprendizajes en experiencias digitales más
+            simples, útiles y significativas. Disfruto trabajar entre la
+            investigación, la estrategia y el diseño, colaborando con equipos
+            para crear productos que respondan a necesidades reales y generen
+            impacto tanto para los usuarios como para el negocio.
+          </p>
+        </div>
+      </section>
+      <section id="experiencia">
+        <article>
+          <h3>Estudios en x lugar</h3>
+          <p>Loremi psum dolor sit amte</p>
+          <ul>
+            <li>Planificación y ejecución de investigaciones cualitativas.</li>
+            <li>Entrevistas con usuarios y análisis de insights.</li>
+            <li>
+              Identificación de oportunidades de mejora en productos digitales.
+            </li>
+            <li>Colaboración con equipos de producto, diseño y desarrollo.</li>
+          </ul>
+        </article>
+      </section>
     </main>
-    <footer class="card">
-      <img id="logo" src="../logo.png" alt="logo" />
-      <p>&copy; 2026 - Todos los derechos reservados.</p>
+    <footer>
+      <div id="footer-logo-container">
+        <img height="40px" id="logo" src="logo.png" alt="logo" />
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+      </div>
       <ul>
         <li>
-          <a><img id="instagram" src="../instagram.svg" alt="instagram" /></a>
+          <a href="www.instagram.com"
+            ><img id="instagram" src="./instagram.svg" alt="instagram"
+          /></a>
         </li>
         <li>
-          <a><img id="github" src="../github.svg" alt="github" /></a>
+          <a href="www.github.com"
+            ><img id="github" src="./github.svg" alt="github"
+          /></a>
         </li>
       </ul>
     </footer>

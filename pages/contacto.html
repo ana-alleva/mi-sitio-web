@@ -14,42 +14,91 @@
   </head>
   <body>
     <header>
-      <div class="text-container">
-        <h1>Contacto</h1>
-        <p>Este es mi primer sitio web profesional.</p>
-      </div>
       <nav>
         <ul>
           <li>
-            <a href="../index.html">Inicio</a>
+            <a href="#">Inicio</a>
           </li>
           <li>
-            <a href="./sobre-mi.html">Sobre mí</a>
+            <a href="sobre-mi.html">Sobre mí</a>
           </li>
           <li>
-            <a href="./proyectos.html">Proyectos</a>
+            <a href="proyectos.html">Proyectos</a>
           </li>
           <li>
-            <a href="./demo.html">Demo</a>
+            <a href="demo.html">Demo</a>
           </li>
           <li>
-            <a href="./contacto.html">Contacto</a>
+            <a class="active" href="/pages/contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="contacto"></section>
+      <section id="hero-contactos">
+        <div class="hero-text">
+          <h1>Contactanos</h1>
+          <p>
+            I transform research insights into intuitive digital experiences,
+            helping teams build products that are useful, usable, and
+            meaningful."
+          </p>
+        </div>
+      </section>
+      <section id="form">
+        <form>
+          <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Contame sobre tu proyecto..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="button-primary">Enviar</button>
+        </form>
+      </section>
     </main>
-    <footer class="card">
-      <img id="logo" src="../logo.png" alt="logo" />
-      <p>&copy; 2026 - Todos los derechos reservados.</p>
+    <footer>
+      <div id="footer-logo-container">
+        <img height="40px" id="logo" src="../logo.png" alt="logo" />
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+      </div>
       <ul>
         <li>
-          <a><img id="instagram" src="../instagram.svg" alt="instagram" /></a>
+          <a href="www.instagram.com"
+            ><img id="instagram" src="../instagram.svg" alt="instagram"
+          /></a>
         </li>
         <li>
-          <a><img id="github" src="../github.svg" alt="github" /></a>
+          <a href="www.github.com"
+            ><img id="github" src="../github.svg" alt="github"
+          /></a>
         </li>
       </ul>
     </footer>

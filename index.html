@@ -14,14 +14,10 @@
   </head>
   <body>
     <header>
-      <div class="text-container">
-        <h1>Hi, I'm Ana Clara Alleva</h1>
-        <p>Este es mi primer sitio web profesional.</p>
-      </div>
       <nav>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a class="active" href="#">Inicio</a>
           </li>
           <li>
             <a href="./pages/sobre-mi.html">Sobre mí</a>
@@ -39,79 +35,80 @@
       </nav>
     </header>
     <main>
-      <section id="profile-information">
-        <div class="card" id="profile-picture">
-          <div class="text-container">
-            <h2>About Me</h2>
+      <section id="hero">
+        <img id="profile-pic" src="./alleva-ana.png" alt="profile pic" />
+        <div class="hero-text">
+          <p class="small-text">UX Researcher & Product Designer</p>
+          <h1>Ana Clara Alleva</h1>
+          <p>
+            I transform research insights into intuitive digital experiences,
+            helping teams build products that are useful, usable, and
+            meaningful."
+          </p>
+          <div class="button-container">
+            <button class="button-primary">View Work</button>
+            <button class="button-secondary">Download CV</button>
+          </div>
+        </div>
+      </section>
+      <section id="cards">
+        <article class="card">
+          <img height="100px" src="./logo.png" alt="project" />
+          <div class="text-container-card">
+            <h3>Reducing friction in digital onboarding</h3>
             <p>
-              UX-focused designer and frontend developer crafting clean,
-              intuitive, human-centered digital experiences.
+              How research uncovered the barriers preventing users from
+              completing account creation.
             </p>
           </div>
-          <figure>
-            <img
-              class="profile-img"
-              src="./alleva-ana.png"
-              alt="profile-picture"
-            />
-            <figcaption>UX UI Designer</figcaption>
-          </figure>
-        </div>
-        <div class="card" id="bio-container">
-          <h3>Bio & Other Details</h3>
-          <article class="info">
-            <div>
-              <h4>My Role</h4>
-              <p>UX UI Designer</p>
-            </div>
-            <div>
-              <h4>My Experience</h4>
-              <p>Senior</p>
-            </div>
-          </article>
-          <article class="info">
-            <div>
-              <h4>My Email</h4>
-              <p>aclara@gmail.com</p>
-            </div>
-            <div>
-              <h4>My Portfolio</h4>
-              <a href="#">Behance.com/profile</a>
-            </div>
-          </article>
-          <article class="info">
-            <div>
-              <h4>My City</h4>
-              <p>Buenos Aires</p>
-            </div>
-            <div>
-              <h4>Availability</h4>
-              <p class="pill">Ready</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="card" id="skills">
-        <h4>Skills</h4>
-        <ul>
-          <li class="pill">UX UI</li>
-          <li class="pill">Figma</li>
-          <li class="pill">HTML5</li>
-          <li class="pill">CSS3</li>
-          <li class="pill">GitHub</li>
-          <li class="pill">FlexBox</li>
-        </ul>
+        </article>
+        <article class="card">
+          <img height="100px" src="./logo.png" alt="project" />
+          <div class="text-container-card">
+            <h3>Reimagining the e-commerce purchase journey</h3>
+            <p>
+              A redesign focused on improving product discovery, trust, and
+              conversion.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img height="100px" src="./logo.png" alt="project" />
+          <div class="text-container-card">
+            <h3>Designing a mobile experience for everyday habits</h3>
+            <p>
+              From user interviews to interaction design for a behavior-driven
+              mobile product.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img height="100px" src="./logo.png" alt="project" />
+          <div class="text-container-card">
+            <h3>Making complex data easier to understand</h3>
+            <p>
+              Transforming a dense analytics dashboard into a clearer
+              decision-making tool.
+            </p>
+          </div>
+        </article>
       </section>
     </main>
-    <footer class="card">
-      <img id="logo" src="logo.png" alt="logo" />
-      <p>&copy; 2026 - Todos los derechos reservados.</p>
+    <footer>
+      <div id="footer-logo-container">
+        <img height="40px" id="logo" src="logo.png" alt="logo" />
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+      </div>
       <ul>
         <li>
-          <a><img id="instagram" src="./instagram.svg" alt="instagram" /></a>
+          <a href="www.instagram.com"
+            ><img id="instagram" src="./instagram.svg" alt="instagram"
+          /></a>
         </li>
         <li>
-          <a><img id="github" src="./github.svg" alt="github" /></a>
+          <a href="www.github.com"
+            ><img id="github" src="./github.svg" alt="github"
+          /></a>
         </li>
       </ul>
     </footer>
