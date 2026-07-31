@@ -7,9 +7,19 @@
 }
 
 body {
-  background-color: #070707;
+  background-color: var(--black-color);
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--white-color);
+}
+
+:root {
+  --primary-color: #fbabe4;
+  --secondary-color: #1e293b;
+  --white-color: white;
+  --black-color: #070707;
+  --gray-color: gainsboro;
+  --spacing: 16px;
+  --border-radius: 16px;
 }
 
 main,
@@ -30,7 +40,7 @@ ul {
 }
 
 nav {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 16px 24px;
   border-radius: 16px;
   display: flex;
@@ -47,10 +57,10 @@ nav {
       padding: 8px;
       border-radius: 8px;
       transition: all 0.5s ease;
-      color: #070707;
+      color: var(--black-color);
     }
     & li a:hover {
-      background-color: #fbabe4;
+      background-color: var(--primary-color);
     }
   }
 }
@@ -78,7 +88,7 @@ nav {
     font-size: 100px;
   }
   & .small-text {
-    color: gainsboro;
+    color: var(--gray-color);
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -95,23 +105,23 @@ nav {
     border-radius: 8px;
   }
   & .button-primary {
-    background-color: white;
-    color: #070707;
+    background-color: var(--white-color);
+    color: var(--black-color);
     border: none;
   }
   & .button-primary:hover {
-    background-color: #fbabe4;
+    background-color: var(--primary-color);
     transition: all 0.5s ease;
   }
   & .button-secondary {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
   }
   & .button-secondary:hover {
-    background-color: #fbabe4;
-    color: #070707;
-    border: 1px solid #fbabe4;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: 1px solid var(--primary-color);
     transition: all 0.5s ease;
   }
 }
@@ -123,8 +133,8 @@ nav {
   display: flex;
   gap: 24px;
   & .card {
-    background: white;
-    color: #070707;
+    background: var(--white-color);
+    color: var(--black-color);
     display: flex;
     padding: 24px;
     gap: 16px;
@@ -135,7 +145,7 @@ nav {
     }
   }
   & .card:hover {
-    background-color: #fbabe4;
+    background-color: var(--primary-color);
     transition: all 0.5s ease;
   }
 }
@@ -169,10 +179,10 @@ footer {
 }
 
 .active {
-  background-color: #fbabe4;
+  background-color: var(--primary-color);
 }
 
-#hero-sobre-mi {
+.hero-sobre-mi {
   padding: 100px 24px;
   display: flex;
   align-items: center;
@@ -197,11 +207,11 @@ p {
   max-width: 980px;
   margin: 0 auto;
   & h3 {
-    color: white;
+    color: var(--white-color);
     margin-bottom: 8px;
   }
   & p {
-    color: gainsboro;
+    color: var(--gray-color);
   }
   article {
     text-align: left;
@@ -221,7 +231,8 @@ p {
   margin: 0 auto;
 }
 
-#hero-contactos {
+.hero-contactos,
+.hero-servicios {
   padding: 100px 24px;
   display: flex;
   align-items: center;
@@ -240,17 +251,17 @@ p {
   & input {
     height: 40px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     padding: 8px;
     border-radius: 8px;
-    color: white;
+    color: var(--white-color);
   }
   & textarea {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     padding: 16px;
     border-radius: 8px;
-    color: white;
+    color: var(--white-color);
   }
 }
 
@@ -260,5 +271,5 @@ p {
 }
 
 input::placeholder {
-  color: gray;
+  color: var(--gray-color);
 }
