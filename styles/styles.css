@@ -29,6 +29,12 @@ footer {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+}
+
 a {
   text-decoration: none;
 }
@@ -42,7 +48,7 @@ ul {
 nav {
   background-color: var(--white-color);
   padding: 16px 24px;
-  border-radius: 16px;
+  border-radius: var(--border-radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,6 +274,17 @@ p {
 #form {
   max-width: 980px;
   margin: 0 auto;
+  & button {
+    padding: 1em 2em;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+  }
+  & button:hover {
+    background-color: var(--primary-color);
+    transition: all 0.5s ease;
+  }
 }
 
 input::placeholder {
